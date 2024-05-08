@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the number of days (typically 7).
 // Dart implementation
 bool tooMuchScreenTime(List<int> hours) {
   // Rule 1: any single day >= 10
