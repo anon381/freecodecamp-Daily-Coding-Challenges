@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the number of days (typically 7).
 // Java implementation
 public class ScreenTime {
     public static boolean tooMuchScreenTime(int[] hours) {
