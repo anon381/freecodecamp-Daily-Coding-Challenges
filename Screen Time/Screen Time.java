@@ -1,4 +1,5 @@
 // Time Complexity: O(n), where n is the number of days (typically 7).
+// Space Complexity: O(1), only a constant amount of extra space is used.
 // Java implementation
 public class ScreenTime {
     public static boolean tooMuchScreenTime(int[] hours) {
