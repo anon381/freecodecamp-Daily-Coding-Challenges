@@ -1,0 +1,15 @@
+// JavaScript implementation
+function tooMuchScreenTime(hours) {
+  // Rule 1: any single day >= 10
+  if (hours.some(h => h >= 10)) return true;
+  // Rule 2: average of any 3 consecutive days >= 8
+  for (let i = 0; i < hours.length - 2; i++) {
+    if ((hours[i] + hours[i+1] + hours[i+2]) / 3 >= 8) return true;
+  }
+  // Rule 3: weekly average >= 6
+  if (hours.reduce((a, b) => a + b, 0) / 7 >= 6) return true;
+  return false;
+}
+
+console.log(tooMuchScreenTime([7, 8, 9, 5, 6, 7, 8])); // true
+console.log(tooMuchScreenTime([5, 5, 5, 5, 5, 5, 5])); // false
