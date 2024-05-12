@@ -1,3 +1,4 @@
+// Time Complexity: O(n^2), where n is the number of words (due to unique search and sorting).
 function getWords(paragraph) {
 	// Lowercase and remove punctuation
 	let text = paragraph.toLowerCase().replace(/[,.!]/g, '');
