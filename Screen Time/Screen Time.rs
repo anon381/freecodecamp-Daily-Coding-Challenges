@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the number of days (typically 7).
 // Rust implementation
 fn too_much_screen_time(hours: &[i32]) -> bool {
     // Rule 1: any single day >= 10
