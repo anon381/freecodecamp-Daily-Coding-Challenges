@@ -1,3 +1,4 @@
+# Time Complexity: O(n), where n is the number of days (typically 7).
 def too_much_screen_time(hours):
     # Rule 1: any single day >= 10
     if any(h >= 10 for h in hours):
