@@ -1,5 +1,6 @@
 
 # Time Complexity: O(n), where n is the length of the sequence to generate.
+# Space Complexity: O(n), for storing the output sequence of length n.
 from typing import List
 
 def fibonacci_sequence(start: List[int], length: int) -> List[int]:
