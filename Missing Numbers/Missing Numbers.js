@@ -1,4 +1,5 @@
 // JavaScript implementation
+// Time Complexity: O(n), where n is the length of the input array (for set creation and max search)
 function findMissingNumbers(arr) {
   if (arr.length === 0) return [];
   const n = Math.max(...arr);
