@@ -1,6 +1,7 @@
 def find_missing_numbers(arr):
     """
     Time Complexity: O(n), where n is the length of the input array (for set creation and max search).
+    Space Complexity: O(n), for storing the set of unique numbers and the output list.
     """
     if not arr:
         return []
