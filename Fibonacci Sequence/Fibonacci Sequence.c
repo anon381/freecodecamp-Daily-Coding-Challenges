@@ -1,5 +1,6 @@
 
 // Time Complexity: O(n), where n is the length of the sequence to generate.
+// Space Complexity: O(1), only a constant amount of extra space is used (not counting output).
 #include <stdio.h>
 
 void fibonacci_sequence(long long start1, long long start2, int length) {
