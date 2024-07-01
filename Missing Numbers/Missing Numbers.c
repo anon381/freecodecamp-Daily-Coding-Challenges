@@ -3,6 +3,7 @@
 #include <stdlib.h>
 
 // Time Complexity: O(n), where n is the length of the input array (for max search and marking presence)
+// Space Complexity: O(n), for the boolean array to mark presence and the output.
 
 void find_missing_numbers(const int *arr, int len) {
     if (len == 0) {
