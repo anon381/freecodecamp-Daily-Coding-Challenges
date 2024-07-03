@@ -1,5 +1,6 @@
 // Java implementation
 // Time Complexity: O(n), where n is the length of the input array (for set creation and max search)
+// Space Complexity: O(n), for storing the set and the output list.
 import java.util.*;
 
 public class MissingNumbers {
