@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+// Time Complexity: O(n), where n is the length of the input string
+#include <string.h>
+#include <ctype.h>
 
 int is_valid_number(const char *s, int base) {
     for (int i = 0; s[i]; i++) {
