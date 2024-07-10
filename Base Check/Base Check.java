@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the length of the input string
 public class BaseCheck {
     public static boolean isValidNumber(String s, int base) {
         s = s.toUpperCase();
