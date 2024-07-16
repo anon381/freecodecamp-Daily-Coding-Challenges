@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the length of the input string
 bool isValidNumber(String s, int base) {
   s = s.toUpperCase();
   for (int i = 0; i < s.length; i++) {
