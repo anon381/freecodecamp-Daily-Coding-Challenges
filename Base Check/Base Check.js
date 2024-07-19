@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the length of the input string
 function isValidNumber(s, base) {
   s = s.toUpperCase();
   for (let i = 0; i < s.length; i++) {
