@@ -4,6 +4,7 @@ from collections import Counter
 def get_words(paragraph):
 	"""
 	Time Complexity: O(n^2), where n is the number of words (due to unique_words.contains and sorting).
+	Space Complexity: O(n), for storing the word counts and unique words list.
 	"""
 	# Lowercase and remove punctuation
 	text = re.sub(r"[,.!]", "", paragraph.lower())
