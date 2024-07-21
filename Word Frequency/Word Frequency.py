@@ -2,6 +2,9 @@ import re
 from collections import Counter
 
 def get_words(paragraph):
+	"""
+	Time Complexity: O(n^2), where n is the number of words (due to unique_words.contains and sorting).
+	"""
 	# Lowercase and remove punctuation
 	text = re.sub(r"[,.!]", "", paragraph.lower())
 	words = text.split()
