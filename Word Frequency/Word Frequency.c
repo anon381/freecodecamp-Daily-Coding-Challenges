@@ -1,4 +1,5 @@
 # Time Complexity: O(n^2), where n is the number of words (due to unique search and sorting).
+# Space Complexity: O(n), for storing the word structs and temporary buffers.
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
