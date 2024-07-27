@@ -1,4 +1,5 @@
 // Time Complexity: O(n), where n is the length of the input string
+// Space Complexity: O(1), only a few variables are used
 fn is_valid_number(s: &str, base: u32) -> bool {
     for ch in s.chars() {
         let val = match ch.to_ascii_uppercase() {
