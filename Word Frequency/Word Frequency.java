@@ -1,4 +1,5 @@
 // Time Complexity: O(n^2), where n is the number of words (due to unique search and sorting).
+// Space Complexity: O(n), for storing the word counts and unique words list.
 import java.util.*;
 
 public class WordFrequency {
