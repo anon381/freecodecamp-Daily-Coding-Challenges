@@ -7,6 +7,7 @@
 
 /*
 Time Complexity: O(sqrt(n))
+Space Complexity: O(1)
 */
 bool is_unnatural_prime(int n) {
 	// 0 and ±1 are not prime
