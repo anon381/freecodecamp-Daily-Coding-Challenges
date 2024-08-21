@@ -1,5 +1,6 @@
 // Checks if a number is an "unnatural prime" (prime for both positive and negative values)
 // Time Complexity: O(sqrt(n))
+// Space Complexity: O(1)
 public class UnnaturalPrime {
 	public static boolean isUnnaturalPrime(int n) {
 		// 0 and ±1 are not prime
