@@ -1,4 +1,5 @@
 // Checks if a number is an "unnatural prime" (prime for both positive and negative values)
+// Time Complexity: O(sqrt(n))
 bool isUnnaturalPrime(int n) {
 	// 0 and ±1 are not prime
 	if (n == 0 || n == 1 || n == -1) {
