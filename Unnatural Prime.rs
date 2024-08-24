@@ -1,4 +1,5 @@
 // Checks if a number is an "unnatural prime" (prime for both positive and negative values)
+// Time Complexity: O(sqrt(n))
 pub fn is_unnatural_prime(n: i32) -> bool {
 	// 0 and ±1 are not prime
 	if n == 0 || n == 1 || n == -1 {
