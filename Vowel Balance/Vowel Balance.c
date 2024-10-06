@@ -4,6 +4,10 @@
 //   s: input string
 // Returns:
 //   1 if the string is vowel balanced, 0 otherwise.
+//
+// Usage Examples:
+//   is_balanced("racecar") => 1
+//   is_balanced("hello")   => 0
 #include <stdio.h>
 // Time Complexity: O(n), where n is the length of the input string
 // Space Complexity: O(1), only a few variables are used
