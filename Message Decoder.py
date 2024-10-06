@@ -12,3 +12,6 @@ def decode(message: str, shift: int) -> str:
 		else:
 			result.append(ch)
 	return "".join(result)
+
+# This function decodes a message by shifting each alphabetic character backwards by the specified shift value.
+# Non-alphabetic characters remain unchanged. The result is a decoded string using a Caesar cipher in reverse.
