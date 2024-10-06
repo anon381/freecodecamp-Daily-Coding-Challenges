@@ -1,3 +1,9 @@
+// Checks if the number of vowels in the first half and second half of a string are equal.
+// Returns 1 if balanced, 0 otherwise.
+// Parameters:
+//   s: input string
+// Returns:
+//   1 if the string is vowel balanced, 0 otherwise.
 #include <stdio.h>
 // Time Complexity: O(n), where n is the length of the input string
 // Space Complexity: O(1), only a few variables are used
