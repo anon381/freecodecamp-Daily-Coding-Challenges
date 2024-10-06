@@ -1,3 +1,9 @@
+if __name__ == "__main__":
+	message = "Hello, World!"
+	shift = 3
+	decoded = decode(message, shift)
+	print(f"Original: {message}")
+	print(f"Decoded: {decoded}")
 """
 Time Complexity: O(n), where n is the length of the message
 Space Complexity: O(n), due to result string
