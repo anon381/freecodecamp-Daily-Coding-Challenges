@@ -20,6 +20,9 @@ int is_vowel(char c) {
 }
 
 int is_balanced(const char *s) {
+    if (s == NULL || strlen(s) == 0) {
+        return 0; // Not balanced if input is NULL or empty
+    }
     int n = strlen(s);
     int half = n / 2;
     int countFirst = 0, countSecond = 0;
