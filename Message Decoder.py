@@ -1,5 +1,6 @@
 """
 Time Complexity: O(n), where n is the length of the message
+Space Complexity: O(n), due to result string
 """
 def decode(message: str, shift: int) -> str:
 	result = []
