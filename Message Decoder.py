@@ -1,3 +1,6 @@
+"""
+Time Complexity: O(n), where n is the length of the message
+"""
 def decode(message: str, shift: int) -> str:
 	result = []
 	for ch in message:
