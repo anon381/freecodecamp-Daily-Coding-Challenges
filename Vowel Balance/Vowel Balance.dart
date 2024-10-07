@@ -11,6 +11,9 @@
 // Time Complexity: O(n), where n is the length of the input string
 // Space Complexity: O(1), only a few variables are used
 bool isBalanced(String s) {
+  if (s == null || s.isEmpty) {
+    return false;
+  }
   const vowels = "aeiouAEIOU";
   int n = s.length;
   int half = n ~/ 2;
