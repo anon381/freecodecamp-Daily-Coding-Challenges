@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the length of the input string
 bool isBalanced(String s) {
   const vowels = "aeiouAEIOU";
   int n = s.length;
