@@ -1,5 +1,6 @@
 /*
 Time Complexity: O(n), where n is the length of the message
+Space Complexity: O(n), due to output string
 */
 #include <stdio.h>
 #include <ctype.h>
