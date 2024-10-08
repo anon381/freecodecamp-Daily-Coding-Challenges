@@ -20,4 +20,6 @@ void decode(const char* message, int shift, char* output) {
 		}
 	}
 	output[len] = '\0';
+	// This function decodes a message by shifting each alphabetic character backwards by the specified shift value.
+	// Non-alphabetic characters remain unchanged. The result is a decoded string using a Caesar cipher in reverse.
 }
