@@ -1,3 +1,12 @@
+int main() {
+	const char* message = "Hello, World!";
+	int shift = 3;
+	char output[100];
+	decode(message, shift, output);
+	printf("Original: %s\n", message);
+	printf("Decoded: %s\n", output);
+	return 0;
+}
 /*
 Time Complexity: O(n), where n is the length of the message
 Space Complexity: O(n), due to output string
