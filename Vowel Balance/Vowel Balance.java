@@ -1,3 +1,9 @@
+// Checks if the number of vowels in the first half and second half of a string are equal.
+// Returns true if balanced, false otherwise.
+// Parameters:
+//   s: input string
+// Returns:
+//   true if the string is vowel balanced, false otherwise.
 // Time Complexity: O(n), where n is the length of the input string
 // Space Complexity: O(1), only a few variables are used
 public class VowelBalance {
