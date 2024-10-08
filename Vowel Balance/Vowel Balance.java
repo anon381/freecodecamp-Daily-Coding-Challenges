@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the length of the input string
 public class VowelBalance {
     public static boolean isBalanced(String s) {
         String vowels = "aeiouAEIOU";
