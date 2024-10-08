@@ -1,3 +1,6 @@
+/*
+Time Complexity: O(n), where n is the length of the message
+*/
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
