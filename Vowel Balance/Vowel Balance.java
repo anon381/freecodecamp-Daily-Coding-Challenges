@@ -12,6 +12,9 @@
 // Space Complexity: O(1), only a few variables are used
 public class VowelBalance {
     public static boolean isBalanced(String s) {
+        if (s == null || s.isEmpty()) {
+            return false;
+        }
         String vowels = "aeiouAEIOU";
         int n = s.length();
         int half = n / 2;
