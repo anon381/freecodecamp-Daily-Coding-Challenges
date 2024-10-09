@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the length of the message
 // Decodes a message by shifting alphabetic characters backwards by 'shift'.
 public class MessageDecoder {
 	public static String decode(String message, int shift) {
