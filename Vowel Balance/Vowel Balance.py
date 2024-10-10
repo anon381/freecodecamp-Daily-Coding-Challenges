@@ -1,3 +1,4 @@
+# Time Complexity: O(n), where n is the length of the input string
 def is_balanced(s: str) -> bool:
     vowels = set("aeiouAEIOU")
     n = len(s)
