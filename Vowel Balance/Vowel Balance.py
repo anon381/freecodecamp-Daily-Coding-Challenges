@@ -4,6 +4,10 @@
 #   s: input string
 # Returns:
 #   True if the string is vowel balanced, False otherwise.
+#
+# Usage Examples:
+#   is_balanced("racecar") => True
+#   is_balanced("hello")   => False
 # Time Complexity: O(n), where n is the length of the input string
 # Space Complexity: O(1), only a few variables are used
 def is_balanced(s: str) -> bool:
