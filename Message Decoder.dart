@@ -1,3 +1,10 @@
+void main() {
+	String message = "Hello, World!";
+	int shift = 3;
+	String decoded = decode(message, shift);
+	print('Original: $message');
+	print('Decoded: $decoded');
+}
 // Time Complexity: O(n), where n is the length of the message
 // Space Complexity: O(n), due to result string
 // Decodes a message by shifting alphabetic characters backwards by 'shift'.
