@@ -1,4 +1,5 @@
 // Time Complexity: O(n), where n is the length of the message
+// Space Complexity: O(n), due to result string
 // Decodes a message by shifting alphabetic characters backwards by 'shift'.
 String decode(String message, int shift) {
 	StringBuffer result = StringBuffer();
