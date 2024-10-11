@@ -1,4 +1,5 @@
 // Time Complexity: O(n), where n is the length of the input string
+// Space Complexity: O(1), only a few variables are used
 fn is_balanced(s: &str) -> bool {
     let vowels = "aeiouAEIOU";
     let chars: Vec<char> = s.chars().collect();
