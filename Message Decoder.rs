@@ -1,3 +1,10 @@
+fn main() {
+	let message = "Hello, World!";
+	let shift = 3;
+	let decoded = decode(message, shift);
+	println!("Original: {}", message);
+	println!("Decoded: {}", decoded);
+}
 // Time Complexity: O(n), where n is the length of the message
 // Space Complexity: O(n), due to result string
 // Decodes a message by shifting alphabetic characters backwards by 'shift'.
