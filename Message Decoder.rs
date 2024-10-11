@@ -2,16 +2,24 @@
 // Space Complexity: O(n), due to result string
 // Decodes a message by shifting alphabetic characters backwards by 'shift'.
 pub fn decode(message: &str, shift: i32) -> String {
+	// Create a String to store the decoded result
 	let mut result = String::new();
+	// Iterate over each character in the message
 	for ch in message.chars() {
+		// Check if the character is alphabetic
 		if ch.is_ascii_alphabetic() {
+			// Determine base ASCII value ('A' for uppercase, 'a' for lowercase)
 			let base = if ch.is_ascii_uppercase() { b'A' } else { b'a' };
+			// Shift the character backwards by 'shift' and wrap around the alphabet
 			let decoded = ((ch as u8 - base + 26 - (shift as u8 % 26)) % 26) + base;
+			// Append the decoded character to the result
 			result.push(decoded as char);
 		} else {
+			// Non-alphabetic characters are appended unchanged
 			result.push(ch);
 		}
 	}
+	// Return the final decoded string
 	result
 	}
 
