@@ -15,7 +15,6 @@ Space Complexity: O(n), due to output string
 #include <ctype.h>
 #include <string.h>
 
-// Decodes a message by shifting alphabetic characters backwards by 'shift'.
 void decode(const char* message, int shift, char* output) {
 		// Get the length of the message
 		int len = strlen(message);
