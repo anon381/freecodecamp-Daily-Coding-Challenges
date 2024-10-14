@@ -7,7 +7,6 @@ fn main() {
 }
 // Time Complexity: O(n), where n is the length of the message
 // Space Complexity: O(n), due to result string
-// Decodes a message by shifting alphabetic characters backwards by 'shift'.
 pub fn decode(message: &str, shift: i32) -> String {
 	// Create a String to store the decoded result
 	let mut result = String::new();
