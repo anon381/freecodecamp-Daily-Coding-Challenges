@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the number of characters in the input string.
 // C implementation
 #include <stdio.h>
 #include <string.h>
