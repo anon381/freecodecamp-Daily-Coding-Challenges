@@ -1,4 +1,5 @@
 # Time Complexity: O(n), where n is the number of characters in the input string.
+# Space Complexity: O(n), for storing the words and output.
 # Python implementation
 
 def reverse_sentence(s: str) -> str:
