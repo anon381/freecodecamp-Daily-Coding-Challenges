@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the number of characters in the input string.
 // Rust implementation
 fn reverse_sentence(s: &str) -> String {
     let words: Vec<&str> = s.split_whitespace().collect();
