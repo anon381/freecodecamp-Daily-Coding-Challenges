@@ -1,3 +1,4 @@
+# Time Complexity: O(log n)
 def burn_candles(candles: int, make_new: int) -> int:
     total_burned = 0
     leftovers = 0
