@@ -16,7 +16,10 @@ def burn_candles(candles: int, make_new: int) -> int:
     total_burned += candles
     # Add the burned candles to leftovers for making new candles
     leftovers += candles
+    # Calculate how many new candles can be made from leftovers
+
+   
     candles = leftovers // make_new
-        
+         # Update leftovers after making new candles
     leftovers = leftovers % make_new
     return total_burned
