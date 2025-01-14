@@ -4,6 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 
+# Returns the strength value of a character (a-z, A-Z, 0-9)
 int char_strength(char c) {
     if (c >= 'a' && c <= 'z') return c - 'a' + 1;
     if (c >= 'A' && c <= 'Z') return c - 'A' + 27;
@@ -11,6 +12,7 @@ int char_strength(char c) {
     return 0;
 }
 
+# Simulates a battle between two armies and returns the result
 const char* battle(const char* your, const char* opp) {
     int len1 = strlen(your);
     int len2 = strlen(opp);
