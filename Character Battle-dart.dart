@@ -1,5 +1,6 @@
 // Space Complexity: O(1)
 // Time Complexity: O(n)
+// Returns the strength value of a character (a-z, A-Z, 0-9)
 int charStrength(String c) {
   if (c.length != 1) return 0;
   var code = c.codeUnitAt(0);
@@ -13,6 +14,7 @@ int charStrength(String c) {
   return 0;
 }
 
+// Simulates a battle between two armies and returns the result
 String battle(String your, String opp) {
   if (your.length > opp.length) return "Opponent retreated";
   if (your.length < opp.length) return "We retreated";
