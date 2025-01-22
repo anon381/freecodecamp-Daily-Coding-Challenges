@@ -1,5 +1,6 @@
 // Space Complexity: O(1)
 // Time Complexity: O(n)
+// Returns the strength value of a character (a-z, A-Z, 0-9)
 fn char_strength(c: char) -> i32 {
     match c {
         'a'..='z' => (c as u8 - b'a' + 1) as i32,
@@ -9,6 +10,7 @@ fn char_strength(c: char) -> i32 {
     }
 }
 
+// Simulates a battle between two armies and returns the result
 fn battle(your: &str, opp: &str) -> &'static str {
     if your.len() > opp.len() {
         return "Opponent retreated";
