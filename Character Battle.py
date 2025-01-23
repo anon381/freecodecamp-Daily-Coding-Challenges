@@ -1,5 +1,6 @@
 # Space Complexity: O(1)
 # Time Complexity: O(n)
+# Returns the strength value of a character (a-z, A-Z, 0-9)
 def char_strength(c: str) -> int:
     if 'a' <= c <= 'z':
         return ord(c) - ord('a') + 1
@@ -10,6 +11,7 @@ def char_strength(c: str) -> int:
     else:
         return 0
 
+# Simulates a battle between two armies and returns the result
 def battle(your_army: str, opponent_army: str) -> str:
     # Retreat conditions
     if len(your_army) > len(opponent_army):
