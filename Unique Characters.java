@@ -17,17 +17,18 @@ public class UniqueCharacters {
 	}
 
 	public static void main(String[] args) {
-		String[][] tests = {
-			{"abc", "true"},
-			{"aA", "true"},
-			{"QwErTy123!@", "true"},
-			{"~!@#$%^&*()_+", "true"},
-			{"hello", "false"},
-			{"freeCodeCamp", "false"},
-			{"!@#*$%^&*()aA", "false"},
-		};
-		for (String[] test : tests) {
-			System.out.println(test[0] + " " + allUnique(test[0]) + " EXPECTED: " + test[1]);
+		java.util.Scanner scanner = new java.util.Scanner(System.in);
+		while (true) {
+			System.out.print("Enter a string to check for unique characters (or 'exit' to quit): ");
+			String input = scanner.nextLine();
+			if (input.equalsIgnoreCase("exit")) break;
+			try {
+				boolean result = allUnique(input);
+				System.out.println("All characters unique: " + result);
+			} catch (Exception e) {
+				System.out.println("Error: " + e.getMessage());
+			}
 		}
+		scanner.close();
 	}
 }
