@@ -5,6 +5,10 @@
 use std::collections::HashSet;
 
 fn all_unique(s: &str) -> bool {
+	if s.is_empty() {
+		eprintln!("Error: Input string is empty.");
+		return false;
+	}
 	let mut seen = HashSet::new();
 	for ch in s.chars() {
 		if !seen.insert(ch) {
