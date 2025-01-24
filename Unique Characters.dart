@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the length of the string
 bool allUnique(String s) {
 	// Return true if all characters in s are unique (case-sensitive)
 	var seen = <String>{};
