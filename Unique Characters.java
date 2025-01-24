@@ -6,7 +6,9 @@ import java.util.HashSet;
 
 public class UniqueCharacters {
 	public static boolean allUnique(String s) {
-		// Return true if all characters in s are unique (case-sensitive)
+		if (s == null) {
+			throw new IllegalArgumentException("Input string cannot be null.");
+		}
 		HashSet<Character> seen = new HashSet<>();
 		for (char ch : s.toCharArray()) {
 			if (!seen.add(ch)) return false;
