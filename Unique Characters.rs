@@ -18,17 +18,17 @@ fn all_unique(s: &str) -> bool {
 	true
 }
 
+use std::io::{self, Write};
+
 fn main() {
-	let tests = [
-		("abc", true),
-		("aA", true),
-		("QwErTy123!@", true),
-		("~!@#$%^&*()_+", true),
-		("hello", false),
-		("freeCodeCamp", false),
-		("!@#*$%^&*()aA", false),
-	];
-	for (inp, expected) in tests.iter() {
-		println!("{} {} EXPECTED: {}", inp, all_unique(inp), expected);
+	loop {
+		print!("Enter a string to check for unique characters (or 'exit' to quit): ");
+		io::stdout().flush().unwrap();
+		let mut input = String::new();
+		if io::stdin().read_line(&mut input).is_err() { break; }
+		let input = input.trim();
+		if input.eq_ignore_ascii_case("exit") { break; }
+		let result = all_unique(input);
+		println!("All characters unique: {}", result);
 	}
 }
