@@ -3,7 +3,9 @@
 // Time Complexity: O(n), where n is the length of the string
 // Space Complexity: O(n), due to the set or hash structure
 bool allUnique(String s) {
-	// Return true if all characters in s are unique (case-sensitive)
+	if (s is! String) {
+		throw ArgumentError('Input must be a String.');
+	}
 	var seen = <String>{};
 	for (var ch in s.split('')) {
 		if (seen.contains(ch)) return false;
