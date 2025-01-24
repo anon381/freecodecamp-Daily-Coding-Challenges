@@ -1,0 +1,26 @@
+use std::collections::HashSet;
+
+fn all_unique(s: &str) -> bool {
+	let mut seen = HashSet::new();
+	for ch in s.chars() {
+		if !seen.insert(ch) {
+			return false;
+		}
+	}
+	true
+}
+
+fn main() {
+	let tests = [
+		("abc", true),
+		("aA", true),
+		("QwErTy123!@", true),
+		("~!@#$%^&*()_+", true),
+		("hello", false),
+		("freeCodeCamp", false),
+		("!@#*$%^&*()aA", false),
+	];
+	for (inp, expected) in tests.iter() {
+		println!("{} {} EXPECTED: {}", inp, all_unique(inp), expected);
+	}
+}
