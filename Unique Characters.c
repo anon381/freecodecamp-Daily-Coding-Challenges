@@ -7,6 +7,10 @@
 #include <stdbool.h>
 
 bool all_unique(const char* s) {
+	if (s == NULL) {
+		fprintf(stderr, "Error: Input string is NULL.\n");
+		return false;
+	}
 	int seen[256] = {0};
 	for (int i = 0; s[i]; i++) {
 		unsigned char ch = s[i];
