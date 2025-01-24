@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the length of the string
 use std::collections::HashSet;
 
 fn all_unique(s: &str) -> bool {
