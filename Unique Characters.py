@@ -5,7 +5,10 @@
 def all_unique(s: str) -> bool:
 	"""
 	Return True if all characters in s are unique (case-sensitive).
+	Raises TypeError if input is not a string.
 	"""
+	if not isinstance(s, str):
+		raise TypeError("Input must be a string.")
 	return len(s) == len(set(s))
 
 # Quick checks
