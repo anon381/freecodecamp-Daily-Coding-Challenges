@@ -14,17 +14,20 @@ bool allUnique(String s) {
 	return true;
 }
 
+import 'dart:io';
+
 void main() {
-	var tests = [
-		["abc", true],
-		["aA", true],
-		["QwErTy123!@", true],
-		["~!@#$%^&*()_+", true],
-		["hello", false],
-		["freeCodeCamp", false],
-		["!@#*$%^&*()aA", false],
-	];
-	for (var test in tests) {
+	while (true) {
+		stdout.write("Enter a string to check for unique characters (or 'exit' to quit): ");
+		String? input = stdin.readLineSync();
+		if (input == null || input.toLowerCase() == 'exit') break;
+		try {
+			bool result = allUnique(input);
+			print("All characters unique: $result");
+		} catch (e) {
+			print("Error: $e");
+		}
+	}
 		print("${test[0]} ${allUnique(test[0])} EXPECTED: ${test[1]}");
 	}
 }
