@@ -1,3 +1,4 @@
+// Time Complexity: O(n), where n is the length of the string
 #include <stdio.h>
 #include <string.h>
 #include <stdbool.h>
