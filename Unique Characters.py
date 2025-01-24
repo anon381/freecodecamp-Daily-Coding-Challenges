@@ -1,4 +1,5 @@
 # Time Complexity: O(n), where n is the length of the string
+# Space Complexity: O(n), due to the set or hash structure
 def all_unique(s: str) -> bool:
 	"""
 	Return True if all characters in s are unique (case-sensitive).
