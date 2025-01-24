@@ -1,3 +1,4 @@
+# Time Complexity: O(n), where n is the length of the string
 def all_unique(s: str) -> bool:
 	"""
 	Return True if all characters in s are unique (case-sensitive).
