@@ -21,17 +21,16 @@ bool all_unique(const char* s) {
 }
 
 int main() {
-	const char* tests[][2] = {
-		{"abc", "1"},
-		{"aA", "1"},
-		{"QwErTy123!@", "1"},
-		{"~!@#$%^&*()_+", "1"},
-		{"hello", "0"},
-		{"freeCodeCamp", "0"},
-		{"!@#*$%^&*()aA", "0"},
-	};
-	for (int i = 0; i < 7; i++) {
-		printf("%s %d EXPECTED: %s\n", tests[i][0], all_unique(tests[i][0]), tests[i][1]);
+	char input[1024];
+	while (1) {
+		printf("Enter a string to check for unique characters (or 'exit' to quit): ");
+		if (!fgets(input, sizeof(input), stdin)) break;
+		// Remove newline
+		size_t len = strlen(input);
+		if (len > 0 && input[len-1] == '\n') input[len-1] = '\0';
+		if (strcmp(input, "exit") == 0) break;
+		bool result = all_unique(input);
+		printf("All characters unique: %s\n", result ? "true" : "false");
 	}
 	return 0;
 }
