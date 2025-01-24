@@ -13,14 +13,14 @@ def all_unique(s: str) -> bool:
 
 # Quick checks
 if __name__ == "__main__":
-	tests = [
-		("abc", True),
-		("aA", True),
-		("QwErTy123!@", True),
-		("~!@#$%^&*()_+", True),
-		("hello", False),
-		("freeCodeCamp", False),
-		("!@#*$%^&*()aA", False),
-	]
+	while True:
+		s = input("Enter a string to check for unique characters (or 'exit' to quit): ")
+		if s.lower() == 'exit':
+			break
+		try:
+			result = all_unique(s)
+			print(f"All characters unique: {result}")
+		except Exception as e:
+			print(f"Error: {e}")
 	for inp, expected in tests:
 		print(inp, all_unique(inp), "EXPECTED:", expected)
