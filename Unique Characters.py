@@ -1,3 +1,5 @@
+# This function checks if all characters in the input string are unique (case-sensitive).
+# It returns True if no character repeats, and False otherwise. Uses a set to track seen characters.
 # Time Complexity: O(n), where n is the length of the string
 # Space Complexity: O(n), due to the set or hash structure
 def all_unique(s: str) -> bool:
