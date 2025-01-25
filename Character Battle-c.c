@@ -1,3 +1,5 @@
+# Space Complexity: O(1)
+# Time Complexity: O(n)
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
