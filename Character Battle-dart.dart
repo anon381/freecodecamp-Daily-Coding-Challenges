@@ -1,3 +1,5 @@
+// Space Complexity: O(1)
+// Time Complexity: O(n)
 int charStrength(String c) {
   if (c.length != 1) return 0;
   var code = c.codeUnitAt(0);
