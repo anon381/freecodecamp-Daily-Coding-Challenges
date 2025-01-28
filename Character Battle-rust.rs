@@ -1,3 +1,5 @@
+// Space Complexity: O(1)
+// Time Complexity: O(n)
 fn char_strength(c: char) -> i32 {
     match c {
         'a'..='z' => (c as u8 - b'a' + 1) as i32,
