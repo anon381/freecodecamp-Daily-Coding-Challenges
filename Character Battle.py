@@ -1,3 +1,5 @@
+# Space Complexity: O(1)
+# Time Complexity: O(n)
 def char_strength(c: str) -> int:
     if 'a' <= c <= 'z':
         return ord(c) - ord('a') + 1
