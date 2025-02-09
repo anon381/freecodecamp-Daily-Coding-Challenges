@@ -1,6 +1,7 @@
 
 
 // Time Complexity: O(n + m), where n = arr1.length, m = arr2.length
+// Space Complexity: O(n + m), for storing sets and result
 function arrayDiff(arr1, arr2) {
     const set1 = new Set(arr1);
     const set2 = new Set(arr2);
