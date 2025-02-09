@@ -2,6 +2,7 @@
 
 public class ArrayDiff {
     // Time Complexity: O(n + m), where n = arr1.length, m = arr2.length
+        // Space Complexity: O(n + m), for storing sets and result
     public static int[] arrayDiff(int[] arr1, int[] arr2) {
         java.util.Set<Integer> set1 = new java.util.HashSet<>();
         java.util.Set<Integer> set2 = new java.util.HashSet<>();
