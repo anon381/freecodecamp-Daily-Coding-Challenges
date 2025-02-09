@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 // Time Complexity: O(n1 + n2)
+// Space Complexity: O(n1 + n2), for result array and temporary variables
 void array_diff(int *arr1, int n1, int *arr2, int n2) {
     int *result = malloc((n1 + n2) * sizeof(int));
     int k = 0;
