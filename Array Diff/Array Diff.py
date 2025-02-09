@@ -1,0 +1,13 @@
+
+
+def array_diff(arr1, arr2):
+    set1 = set(arr1)  # Convert arr1 to a set
+    set2 = set(arr2)  # Convert arr2 to a set
+    diff = set1.symmetric_difference(set2)  # Find symmetric difference
+    return sorted(diff)  # Return sorted result
+
+# Input validation example
+if __name__ == "__main__":
+    arr1 = [1, 2, 3]
+    arr2 = [3, 4, 5]
+    print(array_diff(arr1, arr2))
