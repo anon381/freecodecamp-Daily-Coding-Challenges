@@ -1,6 +1,7 @@
 
 
 // Time Complexity: O(n + m), where n = arr1.len(), m = arr2.len()
+// Space Complexity: O(n + m), for storing sets and result
 fn array_diff(arr1: &[i32], arr2: &[i32]) -> Vec<i32> {
     use std::collections::HashSet;
     let set1: HashSet<_> = arr1.iter().cloned().collect();
