@@ -1,3 +1,4 @@
+# Time Complexity: O(n^2)
 def decode(s):
     stack = []
 
