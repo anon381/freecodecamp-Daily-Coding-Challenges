@@ -1,3 +1,5 @@
+// Time Complexity: O(n^2)
+// Space Complexity: O(n)
 fn decode(s: &str) -> String {
     let mut stack: Vec<char> = Vec::new();
 
