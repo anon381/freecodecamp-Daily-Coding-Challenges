@@ -3,6 +3,9 @@
 
 public class SquaresWithThree {
     public static int squaresWithThree(int n) {
+            if (n <= 0) {
+                throw new IllegalArgumentException("Input must be a positive integer.");
+            }
         int count = 0;
         for (int i = 1; i <= n; i++) {
             if (String.valueOf(i * i).contains("3")) {
