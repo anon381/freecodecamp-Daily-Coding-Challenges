@@ -12,3 +12,4 @@ def squares_with_three(n: int) -> int:
 if __name__ == "__main__":
     n = 10
     print(f"Count: {squares_with_three(n)}")
+# This function iterates through numbers from 1 to n, checks if the square of each number contains the digit '3', and counts how many such numbers exist. Useful for digit pattern analysis in squares.
