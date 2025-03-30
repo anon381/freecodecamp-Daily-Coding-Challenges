@@ -2,6 +2,9 @@
 // Space Complexity: O(1)
 
 fn squares_with_three(n: u32) -> u32 {
+    if n == 0 {
+        panic!("Input must be a positive integer.");
+    }
     let mut count = 0;
     for i in 1..=n {
         if (i * i).to_string().contains('3') {
