@@ -13,4 +13,5 @@ int squaresWithThree(int n) {
 void main() {
   int n = 10;
   print('Count: [32m${squaresWithThree(n)}');
+    // This function counts numbers from 1 to n whose squares contain the digit '3'. It demonstrates Dart's string conversion and digit pattern analysis.
 }
