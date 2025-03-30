@@ -1,6 +1,9 @@
 // Time Complexity: O(n)
 // Space Complexity: O(1)
 int squaresWithThree(int n) {
+  if (n <= 0) {
+    throw ArgumentError('Input must be a positive integer.');
+  }
   int count = 0;
   for (int i = 1; i <= n; i++) {
     if ((i * i).toString().contains('3')) {
