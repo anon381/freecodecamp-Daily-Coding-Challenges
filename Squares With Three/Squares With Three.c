@@ -22,3 +22,4 @@ int main() {
     printf("Count: %d\n", squares_with_three(n));
     return 0;
 }
+    // This program counts numbers from 1 to n whose squares contain the digit '3'. It uses string conversion and character search to analyze digit patterns in C.
