@@ -6,6 +6,10 @@
 #include <stdlib.h>
 
 int squares_with_three(int n) {
+    if (n <= 0) {
+        printf("Input must be a positive integer.\n");
+        return -1;
+    }
     int count = 0;
     char buffer[32];
     for (int i = 1; i <= n; i++) {
