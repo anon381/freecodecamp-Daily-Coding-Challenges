@@ -2,6 +2,8 @@
 # Space Complexity: O(1)
 
 def squares_with_three(n: int) -> int:
+    if n <= 0:
+        raise ValueError("Input must be a positive integer.")
     count = 0
     for i in range(1, n + 1):
         if '3' in str(i * i):
