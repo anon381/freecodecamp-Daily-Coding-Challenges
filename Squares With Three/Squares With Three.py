@@ -1,4 +1,5 @@
 # Time Complexity: O(n)
+# Space Complexity: O(1)
 
 def squares_with_three(n: int) -> int:
     count = 0
