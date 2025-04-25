@@ -1,3 +1,4 @@
+// Time Complexity: O(n)
 
 public class SquaresWithThree {
     public static int squaresWithThree(int n) {
