@@ -1,4 +1,5 @@
 // Time Complexity: O(n)
+// Space Complexity: O(1)
 int squaresWithThree(int n) {
   int count = 0;
   for (int i = 1; i <= n; i++) {
