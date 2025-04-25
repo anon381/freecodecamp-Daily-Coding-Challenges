@@ -1,3 +1,4 @@
+// Time Complexity: O(n)
 
 fn squares_with_three(n: u32) -> u32 {
     let mut count = 0;
