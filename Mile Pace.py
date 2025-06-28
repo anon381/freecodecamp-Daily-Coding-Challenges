@@ -18,3 +18,6 @@ def mile_pace(miles: float, time_str: str) -> str:
 		pace_remaining_seconds = 0
 
 	return f"{pace_minutes:02d}:{pace_remaining_seconds:02d}"
+
+# This function calculates the average pace per mile given the total distance (in miles)
+# and the total time (in MM:SS format). It returns the pace as a string in MM:SS format.
