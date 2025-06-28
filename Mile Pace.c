@@ -1,4 +1,5 @@
 // Time Complexity: O(1) - all operations are constant time
+// Space Complexity: O(1) - only a fixed number of variables used
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
