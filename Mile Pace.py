@@ -1,8 +1,16 @@
 # Time Complexity: O(1) - all operations are constant time
 # Space Complexity: O(1) - only a fixed number of variables used
 def mile_pace(miles: float, time_str: str) -> str:
-	# Split the time string into minutes and seconds
-	minutes, seconds = map(int, time_str.split(":"))
+	# Validate miles
+	if not isinstance(miles, (int, float)) or miles <= 0:
+		raise ValueError("Miles must be a positive number.")
+	# Validate time string format
+	if not isinstance(time_str, str) or ":" not in time_str:
+		raise ValueError("Time string must be in MM:SS format.")
+	try:
+		minutes, seconds = map(int, time_str.split(":"))
+	except Exception:
+		raise ValueError("Time string must contain valid integers in MM:SS format.")
 	# Convert minutes and seconds to total seconds
 	total_seconds = minutes * 60 + seconds
 
