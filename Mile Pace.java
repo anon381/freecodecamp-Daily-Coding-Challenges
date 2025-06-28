@@ -2,10 +2,25 @@
 // Space Complexity: O(1) - only a fixed number of variables used
 public class MilePace {
     public static String milePace(double miles, String timeStr) {
-        // Split the time string into minutes and seconds
+        // Validate miles
+        if (miles <= 0) {
+            throw new IllegalArgumentException("Miles must be a positive number.");
+        }
+        // Validate time string format
+        if (timeStr == null || !timeStr.contains(":")) {
+            throw new IllegalArgumentException("Time string must be in MM:SS format.");
+        }
         String[] parts = timeStr.split(":");
-        int minutes = Integer.parseInt(parts[0]);
-        int seconds = Integer.parseInt(parts[1]);
+        if (parts.length != 2) {
+            throw new IllegalArgumentException("Time string must be in MM:SS format.");
+        }
+        int minutes, seconds;
+        try {
+            minutes = Integer.parseInt(parts[0]);
+            seconds = Integer.parseInt(parts[1]);
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("Time string must contain valid integers in MM:SS format.");
+        }
         // Convert minutes and seconds to total seconds
         int totalSeconds = minutes * 60 + seconds;
 
