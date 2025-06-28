@@ -1,3 +1,4 @@
+// Time Complexity: O(1) - all operations are constant time
 pub fn mile_pace(miles: f64, time_str: &str) -> String {
     // Step 1: convert time string "MM:SS" to total seconds
     let parts: Vec<&str> = time_str.split(':').collect();
