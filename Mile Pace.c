@@ -6,9 +6,21 @@
 #include <math.h>
 
 char* mile_pace(double miles, const char* time_str) {
-    // Split the time string into minutes and seconds
+    // Validate miles
+    if (miles <= 0) {
+        fprintf(stderr, "Miles must be a positive number.\n");
+        return NULL;
+    }
+    // Validate time string format
+    if (!time_str || !strchr(time_str, ':')) {
+        fprintf(stderr, "Time string must be in MM:SS format.\n");
+        return NULL;
+    }
     int minutes, seconds;
-    sscanf(time_str, "%d:%d", &minutes, &seconds);
+    if (sscanf(time_str, "%d:%d", &minutes, &seconds) != 2) {
+        fprintf(stderr, "Time string must contain valid integers in MM:SS format.\n");
+        return NULL;
+    }
     // Convert minutes and seconds to total seconds
     int total_seconds = minutes * 60 + seconds;
 
