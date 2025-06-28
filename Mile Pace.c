@@ -1,3 +1,4 @@
+// Time Complexity: O(1) - all operations are constant time
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
