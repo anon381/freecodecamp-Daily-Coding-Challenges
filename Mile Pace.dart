@@ -1,3 +1,4 @@
+// Time Complexity: O(1) - all operations are constant time
 String milePace(double miles, String timeStr) {
   // Step 1: convert time string "MM:SS" to total seconds
   var parts = timeStr.split(":");
