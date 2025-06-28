@@ -1,10 +1,23 @@
 // Time Complexity: O(1) - all operations are constant time
 // Space Complexity: O(1) - only a fixed number of variables used
 pub fn mile_pace(miles: f64, time_str: &str) -> String {
-    // Split the time string into minutes and seconds
+    // Validate miles
+    if miles <= 0.0 {
+        panic!("Miles must be a positive number.");
+    }
+    // Validate time string format
     let parts: Vec<&str> = time_str.split(':').collect();
-    let minutes: i32 = parts[0].parse().unwrap();
-    let seconds: i32 = parts[1].parse().unwrap();
+    if parts.len() != 2 {
+        panic!("Time string must be in MM:SS format.");
+    }
+    let minutes: i32 = match parts[0].parse() {
+        Ok(m) => m,
+        Err(_) => panic!("Time string must contain valid integers in MM:SS format."),
+    };
+    let seconds: i32 = match parts[1].parse() {
+        Ok(s) => s,
+        Err(_) => panic!("Time string must contain valid integers in MM:SS format."),
+    };
     // Convert minutes and seconds to total seconds
     let total_seconds = minutes * 60 + seconds;
 
