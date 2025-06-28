@@ -1,25 +1,27 @@
 // Time Complexity: O(1) - all operations are constant time
 // Space Complexity: O(1) - only a fixed number of variables used
 String milePace(double miles, String timeStr) {
-  // Step 1: convert time string "MM:SS" to total seconds
+  // Split the time string into minutes and seconds
   var parts = timeStr.split(":");
   int minutes = int.parse(parts[0]);
   int seconds = int.parse(parts[1]);
+  // Convert minutes and seconds to total seconds
   int totalSeconds = minutes * 60 + seconds;
 
-  // Step 2: average seconds per mile
+  // Calculate average seconds per mile
   double paceSeconds = totalSeconds / miles;
 
-  // Step 3: convert back to MM:SS
+  // Convert pace in seconds back to minutes and seconds
   int paceMinutes = (paceSeconds ~/ 60);
   int paceRemainingSeconds = (paceSeconds % 60).round();
 
-  // Handle rounding edge case (e.g. 59.9 sec -> 60 sec)
+  // If rounding results in 60 seconds, increment minutes and reset seconds
   if (paceRemainingSeconds == 60) {
     paceMinutes += 1;
     paceRemainingSeconds = 0;
   }
 
+  // Format the result as MM:SS string
   return "${paceMinutes.toString().padLeft(2, '0')}:${paceRemainingSeconds.toString().padLeft(2, '0')}";
 }
 
