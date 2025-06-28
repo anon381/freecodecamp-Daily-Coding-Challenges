@@ -1,4 +1,5 @@
 # Time Complexity: O(1) - all operations are constant time
+# Space Complexity: O(1) - only a fixed number of variables used
 def mile_pace(miles: float, time_str: str) -> str:
 	# Step 1: convert time string "MM:SS" to total seconds
 	minutes, seconds = map(int, time_str.split(":"))
