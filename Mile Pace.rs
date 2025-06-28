@@ -1,3 +1,6 @@
+// Usage Examples:
+// println!("{}", mile_pace(3.0, "24:00")); // Expected: "08:00"
+// println!("{}", mile_pace(1.5, "10:30")); // Expected: "07:00"
 // Time Complexity: O(1) - all operations are constant time
 // Space Complexity: O(1) - only a fixed number of variables used
 pub fn mile_pace(miles: f64, time_str: &str) -> String {
