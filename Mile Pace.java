@@ -23,4 +23,6 @@ public class MilePace {
 
         return String.format("%02d:%02d", paceMinutes, paceRemainingSeconds);
     }
+    // This function calculates the average pace per mile given the total distance (in miles)
+    // and the total time (in MM:SS format). It returns the pace as a string in MM:SS format.
 }
