@@ -23,3 +23,6 @@ char* mile_pace(double miles, const char* time_str) {
     snprintf(result, 6, "%02d:%02d", pace_minutes, pace_remaining_seconds);
     return result;
 }
+
+// This function calculates the average pace per mile given the total distance (in miles)
+// and the total time (in MM:SS format). It returns the pace as a string in MM:SS format.
