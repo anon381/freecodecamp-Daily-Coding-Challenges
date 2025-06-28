@@ -1,3 +1,6 @@
+# Usage Examples:
+# print(mile_pace(3.0, "24:00"))  # Expected: "08:00"
+# print(mile_pace(1.5, "10:30"))  # Expected: "07:00"
 # Time Complexity: O(1) - all operations are constant time
 # Space Complexity: O(1) - only a fixed number of variables used
 def mile_pace(miles: float, time_str: str) -> str:
