@@ -1,25 +1,27 @@
 // Time Complexity: O(1) - all operations are constant time
 // Space Complexity: O(1) - only a fixed number of variables used
 pub fn mile_pace(miles: f64, time_str: &str) -> String {
-    // Step 1: convert time string "MM:SS" to total seconds
+    // Split the time string into minutes and seconds
     let parts: Vec<&str> = time_str.split(':').collect();
     let minutes: i32 = parts[0].parse().unwrap();
     let seconds: i32 = parts[1].parse().unwrap();
+    // Convert minutes and seconds to total seconds
     let total_seconds = minutes * 60 + seconds;
 
-    // Step 2: average seconds per mile
+    // Calculate average seconds per mile
     let pace_seconds = total_seconds as f64 / miles;
 
-    // Step 3: convert back to MM:SS
+    // Convert pace in seconds back to minutes and seconds
     let mut pace_minutes = (pace_seconds / 60.0).floor() as i32;
     let mut pace_remaining_seconds = (pace_seconds % 60.0).round() as i32;
 
-    // Handle rounding edge case (e.g. 59.9 sec -> 60 sec)
+    // If rounding results in 60 seconds, increment minutes and reset seconds
     if pace_remaining_seconds == 60 {
         pace_minutes += 1;
         pace_remaining_seconds = 0;
     }
 
+    // Format the result as MM:SS string
     format!("{:02}:{:02}", pace_minutes, pace_remaining_seconds)
 }
 
