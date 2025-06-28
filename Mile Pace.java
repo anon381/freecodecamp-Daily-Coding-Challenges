@@ -2,25 +2,27 @@
 // Space Complexity: O(1) - only a fixed number of variables used
 public class MilePace {
     public static String milePace(double miles, String timeStr) {
-        // Step 1: convert time string "MM:SS" to total seconds
+        // Split the time string into minutes and seconds
         String[] parts = timeStr.split(":");
         int minutes = Integer.parseInt(parts[0]);
         int seconds = Integer.parseInt(parts[1]);
+        // Convert minutes and seconds to total seconds
         int totalSeconds = minutes * 60 + seconds;
 
-        // Step 2: average seconds per mile
+        // Calculate average seconds per mile
         double paceSeconds = totalSeconds / miles;
 
-        // Step 3: convert back to MM:SS
+        // Convert pace in seconds back to minutes and seconds
         int paceMinutes = (int) (paceSeconds / 60);
         int paceRemainingSeconds = (int) Math.round(paceSeconds % 60);
 
-        // Handle rounding edge case (e.g. 59.9 sec -> 60 sec)
+        // If rounding results in 60 seconds, increment minutes and reset seconds
         if (paceRemainingSeconds == 60) {
             paceMinutes += 1;
             paceRemainingSeconds = 0;
         }
 
+        // Format the result as MM:SS string
         return String.format("%02d:%02d", paceMinutes, paceRemainingSeconds);
     }
     // This function calculates the average pace per mile given the total distance (in miles)
