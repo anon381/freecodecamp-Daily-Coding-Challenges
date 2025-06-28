@@ -22,3 +22,6 @@ pub fn mile_pace(miles: f64, time_str: &str) -> String {
 
     format!("{:02}:{:02}", pace_minutes, pace_remaining_seconds)
 }
+
+// This function calculates the average pace per mile given the total distance (in miles)
+// and the total time (in MM:SS format). It returns the pace as a string in MM:SS format.
