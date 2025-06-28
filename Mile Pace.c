@@ -6,19 +6,26 @@
 #include <math.h>
 
 char* mile_pace(double miles, const char* time_str) {
+    // Split the time string into minutes and seconds
     int minutes, seconds;
     sscanf(time_str, "%d:%d", &minutes, &seconds);
+    // Convert minutes and seconds to total seconds
     int total_seconds = minutes * 60 + seconds;
 
+    // Calculate average seconds per mile
     double pace_seconds = total_seconds / miles;
+
+    // Convert pace in seconds back to minutes and seconds
     int pace_minutes = (int)(pace_seconds / 60);
     int pace_remaining_seconds = (int)round(fmod(pace_seconds, 60));
 
+    // If rounding results in 60 seconds, increment minutes and reset seconds
     if (pace_remaining_seconds == 60) {
         pace_minutes += 1;
         pace_remaining_seconds = 0;
     }
 
+    // Format the result as MM:SS string
     char* result = malloc(6);
     snprintf(result, 6, "%02d:%02d", pace_minutes, pace_remaining_seconds);
     return result;
