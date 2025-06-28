@@ -22,3 +22,6 @@ String milePace(double miles, String timeStr) {
 
   return "${paceMinutes.toString().padLeft(2, '0')}:${paceRemainingSeconds.toString().padLeft(2, '0')}";
 }
+
+// This function calculates the average pace per mile given the total distance (in miles)
+// and the total time (in MM:SS format). It returns the pace as a string in MM:SS format.
