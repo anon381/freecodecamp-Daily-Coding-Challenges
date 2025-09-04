@@ -6,15 +6,10 @@ public class RepeatVowels {
         int count = 0;
 
         for (char c : s.toCharArray()) {
-            if (vowels.indexOf(c) != -1) { // check if c is a vowel
+            if (vowels.indexOf(c) != -1) {
                 count++;
-                result.append(c);
-                for (int i = 1; i < count; i++) {
-                    result.append(Character.toLowerCase(c));
-                }
-            } else {
-                result.append(c);
-            }
+                for (int i = 0; i < count; i++) result.append(i == 0 ? c : Character.toLowerCase(c));
+            } else result.append(c);
         }
 
         return result.toString();
