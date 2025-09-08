@@ -29,3 +29,5 @@ void build_acronym(const char* phrase, char* acronym) {
 	}
 	acronym[pos] = '\0';
 }
+
+// This function builds an acronym from a given phrase, ignoring certain common words unless they are the first word.
