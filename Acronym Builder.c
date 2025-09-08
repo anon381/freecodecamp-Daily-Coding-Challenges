@@ -13,20 +13,26 @@ int is_ignore_word(const char* word) {
 }
 
 void build_acronym(const char* phrase, char* acronym) {
+	// Copy the input phrase to a temporary buffer
 	char temp[256];
 	strcpy(temp, phrase);
+	// Split the phrase into words
 	char* word = strtok(temp, " ");
 	int i = 0, pos = 0;
+	// Iterate through each word in the phrase
 	while (word) {
+		// Ignore the word if it's in the ignore list and not the first word
 		if (i > 0 && is_ignore_word(word)) {
 			word = strtok(NULL, " ");
 			i++;
 			continue;
 		}
+		// Add the uppercase first character of the word to the acronym
 		acronym[pos++] = toupper(word[0]);
 		word = strtok(NULL, " ");
 		i++;
 	}
+	// Null-terminate the acronym string
 	acronym[pos] = '\0';
 }
 
