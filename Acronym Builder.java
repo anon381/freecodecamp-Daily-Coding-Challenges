@@ -1,3 +1,4 @@
+// Time Complexity: O(n)
 import java.util.*;
 
 public class AcronymBuilder {
