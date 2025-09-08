@@ -1,3 +1,4 @@
+// Space Complexity: O(n)
 // Time Complexity: O(n)
 String buildAcronym(String phrase) {
 	final ignoreWords = {'a', 'an', 'and', 'for', 'by', 'of'};
