@@ -1,3 +1,4 @@
+# Space Complexity: O(n)
 # Time Complexity: O(n)
 def build_acronym(phrase: str) -> str:
 	# Words to ignore unless they are the very first word
