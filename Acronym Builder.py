@@ -11,3 +11,5 @@ def build_acronym(phrase: str) -> str:
 			continue
 		acronym.append(word[0].upper())
 	return "".join(acronym)
+
+# This function builds an acronym from a given phrase, ignoring certain common words unless they are the first word.
