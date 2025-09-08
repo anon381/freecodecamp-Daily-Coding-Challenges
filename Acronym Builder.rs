@@ -13,3 +13,5 @@ fn build_acronym(phrase: &str) -> String {
 	}
 	acronym
 }
+
+// This function builds an acronym from a given phrase, ignoring certain common words unless they are the first word.
