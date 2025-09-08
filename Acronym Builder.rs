@@ -1,3 +1,4 @@
+// Space Complexity: O(n)
 // Time Complexity: O(n)
 fn build_acronym(phrase: &str) -> String {
 	let ignore_words = ["a", "an", "and", "for", "by", "of"];
