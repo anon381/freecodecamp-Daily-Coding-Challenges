@@ -1,3 +1,4 @@
+// Space Complexity: O(n)
 // Time Complexity: O(n)
 import java.util.*;
 
