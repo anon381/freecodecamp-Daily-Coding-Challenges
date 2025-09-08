@@ -1,3 +1,4 @@
+# Time Complexity: O(n)
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
