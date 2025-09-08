@@ -1,3 +1,4 @@
+// Time Complexity: O(n)
 fn build_acronym(phrase: &str) -> String {
 	let ignore_words = ["a", "an", "and", "for", "by", "of"];
 	let words: Vec<&str> = phrase.split_whitespace().collect();
