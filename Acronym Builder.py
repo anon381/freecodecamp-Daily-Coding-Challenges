@@ -1,3 +1,4 @@
+# Time Complexity: O(n)
 def build_acronym(phrase: str) -> str:
 	# Words to ignore unless they are the very first word
 	ignore_words = {"a", "an", "and", "for", "by", "of"}
