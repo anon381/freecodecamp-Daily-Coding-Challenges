@@ -25,3 +25,6 @@ This repository contains solutions to daily coding challenges from freeCodeCamp,
 
 Feel free to submit new solutions or improvements via pull requests.
 freecodecamp
+
+
+## thank you
