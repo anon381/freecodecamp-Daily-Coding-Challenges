@@ -27,4 +27,4 @@ Feel free to submit new solutions or improvements via pull requests.
 freecodecamp
 
 
-## thank you
+## Thank you
