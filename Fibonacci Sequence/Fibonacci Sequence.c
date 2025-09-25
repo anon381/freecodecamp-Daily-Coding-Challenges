@@ -1,3 +1,5 @@
+
+// Time Complexity: O(n), where n is the length of the sequence to generate.
 #include <stdio.h>
 
 void fibonacci_sequence(long long start1, long long start2, int length) {
