@@ -1,3 +1,5 @@
+
+// Time Complexity: O(n), where n is the length of the sequence to generate.
 import java.util.*;
 
 public class FibonacciSequence {
