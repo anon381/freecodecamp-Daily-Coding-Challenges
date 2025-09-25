@@ -1,3 +1,5 @@
+
+// Time Complexity: O(n), where n is the length of the sequence to generate.
 fn fibonacci_sequence(start: [i64; 2], length: usize) -> Vec<i64> {
     if length == 0 {
         return vec![];
