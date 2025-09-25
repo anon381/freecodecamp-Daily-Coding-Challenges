@@ -1,3 +1,5 @@
+
+// Time Complexity: O(n), where n is the length of the sequence to generate.
 List<BigInt> fibonacciSequence(List<BigInt> start, int length) {
   if (length == 0) return [];
   if (length == 1) return [start[0]];
