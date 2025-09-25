@@ -1,3 +1,5 @@
+
+# Time Complexity: O(n), where n is the length of the sequence to generate.
 from typing import List
 
 def fibonacci_sequence(start: List[int], length: int) -> List[int]:
